@@ -2,18 +2,15 @@ require 'pry'
 def turtles
     [
       {name: "Donatello", weapon: "bo-staff", traits: ["serious", "leader"]},
-      {name: "Michaelangelo", weapon: "nunchuks", traits: "party dude"},
+      {name: "Michaelangelo", weapon: "nunchuks", traits: ["party dude"]},
       {name: "Raphael", weapon: "sais", traits: ["cool", "rude"]},
       {name: "Leonardo", weapon: "katanas", traits: ["loves being a turtle"]}
     ]
 end
 
 def turtle_traits(turtles)
-  new_arr = []
   turtles.each do |turtle|
-    turtle[:traits].each do |trait|
-      new_arr << trait
-      binding.pry
+    turtle[:traits].map do |trait|
     end
   end
 end
