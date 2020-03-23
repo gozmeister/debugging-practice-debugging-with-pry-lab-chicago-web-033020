@@ -12,7 +12,7 @@ def turtle_traits(turtles)
   new_arr = []
   turtles.each do |turtle|
     turtle[:traits].map do |trait|
-      ne_arr << trait
+      new_arr << trait
       binding.pry
     end
   end
